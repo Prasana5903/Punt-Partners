@@ -1,0 +1,136 @@
+*{
+  animation: fadeInAnimation ease 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forward;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  25%{
+    opacity: 0.25;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  75%{
+    opacity: 0.75;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+.heading{
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  padding-bottom: 25px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+select {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+/* Hide the default checkbox */
+.switch {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Create a custom toggle switch */
+.switch + .toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.4s;
+}
+
+/* Create the toggle slider (the circle) */
+.switch + .toggle-switch:after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+
+/* Change background color when checked */
+.switch:checked + .toggle-switch {
+  background-color: #2196F3;
+}
+
+/* Move the slider when checked */
+.switch:checked + .toggle-switch:after {
+  transform: translateX(26px);
+}
+
+/* Disabled state styling */
+.switch:disabled + .toggle-switch {
+  background-color: #e6e6e6;
+  cursor: not-allowed;
+}
+
+.switch:disabled + .toggle-switch:after {
+  background-color: #bdbdbd;
+}
+
+.text-editor {
+  width: 80%;
+  height: 200px;
+  padding: 10px;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  resize: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(180, 37, 180);
+  color: white;
+}
+button:hover{
+  background-color: rgb(92, 14, 92);
+  transition: 0.5s;
+}
