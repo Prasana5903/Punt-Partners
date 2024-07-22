@@ -1,8 +1,8 @@
-# Notepad Application
+# Word editor
 
 ## Description
 
-This is a Notepad application built using React. It allows users to:
+This is a Word editor application built using React. It allows users to:
 
 - Select a font family and variant (weight + italic).
 - Toggle italic style.
